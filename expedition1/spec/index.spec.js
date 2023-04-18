@@ -1,10 +1,5 @@
 const {
-  getRightRovers,
-  getAllRover,
-  getRightDoc,
-  getRightCaptain,
-  getAllEngineer,
-  getRightRocket,
+  getRightRovers, getAllRover, getRightDoc, getRightCaptain, getAllEngineer, getRightRocket,
 } = require('../src/functions');
 
 describe('Экспедиция на Марс', () => {
@@ -37,13 +32,7 @@ describe('Экспедиция на Марс', () => {
   describe('Отбор оборудования', () => {
     let equipment;
     beforeEach(() => {
-      equipment = [
-        'Исследователь-2, марсоход, 3',
-        'Рейнджер‑4, луноход, 5',
-        'Покоритель-3, луноход, 7',
-        'Искатель-1, марсоход, 5',
-        'Путник-3, марсоход, 8',
-      ];
+      equipment = ['Исследователь-2, марсоход, 3', 'Рейнджер‑4, луноход, 5', 'Покоритель-3, луноход, 7', 'Искатель-1, марсоход, 5', 'Путник-3, марсоход, 8'];
     });
     it('Позволяет отобрать все марсоходы', () => {
       const allRover = getAllRover();
@@ -57,11 +46,7 @@ describe('Экспедиция на Марс', () => {
   describe('Выбор ракеты', () => {
     let rockets;
     beforeEach(() => {
-      rockets = [
-        'Атлантис, орбитальная, 30',
-        'Колумбия, межзвездная, 1209',
-        'SpaceX, межзвездная, 209456',
-      ];
+      rockets = ['Атлантис, орбитальная, 30', 'Колумбия, межзвездная, 1209', 'SpaceX, межзвездная, 209456'];
     });
     it('позволяет выбрать ракету с максимальной дальностью полёта', () => {
       const rocket = getRightRocket();
