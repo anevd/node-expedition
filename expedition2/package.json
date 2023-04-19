@@ -1,0 +1,22 @@
+{
+  "name": "expedition2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest spec/*[sS]pec.js -i"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "anastasia",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
